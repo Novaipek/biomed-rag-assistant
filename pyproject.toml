@@ -5,7 +5,7 @@ description = "AI-powered research assistant for biomedical literature using RAG
 requires-python = ">=3.11"
 license = {text = "MIT"}
 authors = [
-    {name = "İpek Erdem", email = "novaipekerdem@gmail.com"}
+    {name = "İpek Erdem"}
 ]
 
 dependencies = [
@@ -27,4 +27,5 @@ line-length = 88
 target-version = "py311"
 
 [tool.pytest.ini_options]
+
 testpaths = ["tests"]
