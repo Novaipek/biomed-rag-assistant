@@ -53,3 +53,10 @@ class PubMedClient:
             authors=authors,
             doi=doi
         )
+    def parse_articles(self, xml_data):
+        root = ET.fromstring(xml_data)
+        articles = []
+        for article in root.findall('.//PubmedArticle'):
+            articles.append(self.parse_article(ET.tostring(article,encoding='unicode')))
+        return articles
+
